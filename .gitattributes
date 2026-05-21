@@ -1,0 +1,27 @@
+# Set the default behavior, in case people don't have core.autocrlf set.
+* text=auto
+
+# Files with these extensions are accepted source files inside the tree.
+# They should have native line endings of the OS.
+*.md text
+*.svg text
+*.txt text
+*.TXT text
+
+# .MHTML files can embed binary blobs and have to be compatible with
+# Internet Explorer, so they must stay binary.
+*.mhtml binary
+
+# Files with these extensions are accepted binary files inside the tree.
+# Git must not tamper with them at all!
+*.bmp binary
+*.BMP binary
+*.emf binary
+*.gif binary
+*.ico binary
+*.jpg binary
+*.png binary
+
+# All other extensions not explicitly mentioned here are left for Git
+# to handle automatically.
+# You must not rely on them having a particular line ending style!
